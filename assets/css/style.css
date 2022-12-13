@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  transition: 1s all ease-out;
+}
+
+.red {
+  background: red;
+}
+
+.orange {
+  background: orange;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.blueviolet {
+  background: blueviolet;
+}
+
+#canvasContainer {
+  position: relative;
+}
+
+/* JOYPAD */
+#joypad {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 145px;
+}
+
+#joypad .top {
+  text-align: center;
+  width: inherit;
+}
+
+#joypad .bottom {
+  width: inherit;
+}
+
+#question {
+  color: #4caf50;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#buttonswrapper {
+  margin-top: 110px;
+}
+
+#yesbutton {
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  transition: 0.2s all ease-out;
+  margin-left: calc(50% - 100px);
+}
+
+#yesbutton:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.removed {
+  transform: translateX(100vw);
+}
+.moved {
+  margin-left: calc(50% - 50px)!important;
+  background-color: #4caf50!important;
+  color: white!important;
+}
+
+#nobutton {
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+#nobutton:hover {
+  cursor: no-drop;
+  background-color: black;
+}
+
+#wrapper {
+	position: absolute;
+  margin-left: calc(50% - 80px)!important;
+  margin-top: -150px;
+	animation:pulse 2s infinite;
+  transition: 0.2s all ease-out;
+}
+
+
+#pulsingheart { 
+  position: relative; 
+  width: 100px; 
+  height: 90px;
+} 
+
+#pulsingheart:before, #pulsingheart:after { 
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 50px; 
+  height: 80px; 
+  background: #ff3232; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg);  
+  transform-origin: 0 100%;
+  animation:pulsecolor 1s infinite;
+} 
+
+#pulsingheart:after { 
+  left: 0; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%;
+  animation:pulsecolor 1s infinite;
+}
+
+@keyframes pulse {
+	10% {transform: scale(1.1)}
+}
+
+@keyframes pulsecolor {
+  10% {background: #fa0000}
+}
+
+.hiddenHeart {
+  display: none;
+}
+
+#body1, #body2, #body3, #body4, #body5, #body6  {
+  width: 100%;
+  height: 100px;
+  transition: 1s all ease-out;
+  opacity: 0.7;
+}
+
+#all {
+  left: calc(50% - 152px);
+  position: absolute;
+  top: 115px;
+  background: white;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 30px;
+}
