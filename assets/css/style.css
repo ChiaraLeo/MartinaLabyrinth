@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+}
+
+#canvasContainer {
+  position: relative;
+}
+
+/* JOYPAD */
+#joypad {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 145px;
+}
+
+#joypad .top {
+  text-align: center;
+  width: inherit;
+}
+
+#joypad .bottom {
+  width: inherit;
+}
+
+#question {
+  color: #4caf50;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#buttonswrapper {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#yesbutton {
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+}
+
+#yesbutton:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+#nobutton {
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+#nobutton:hover {
+  cursor: no-drop;
+  background-color: black;
+}
